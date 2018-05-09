@@ -1,3 +1,4 @@
+var image = document.getElementById("imageOne");
 var racers   = [ document.getElementById("race"), document.getElementById("race1") ];
 var pos_tot = 0;
 var pos_rab = 0;
@@ -7,15 +8,14 @@ var winner = [ document.getElementById("r_tot"), document.getElementById("r_rab"
 //change light color
 function changeColor()
             {	
-		    var image = document.getElementById("imageOne");
 				interval = setInterval( fly, 100 );
-                if (image.getAttribute('src') == "red_light.jpg")
+                if (image.getAttribute('src') == "red_light.png")
                 {
-                    image.src = "green_light.jpg";
+                    image.src = "green_light.png";
                 }
                 else
                 {
-                    image.src = "red_light.jpg";
+                    image.src = "red_light.png";
 				}
             }
 // running function
@@ -44,12 +44,12 @@ function back_to_start()
 				winner[1].style.display = "none";
 				pos_rab = 0;
 				pos_tot = 0;		
-                if (image.getAttribute('src') == "red_light.jpg")
+                if (image.getAttribute('src') == "red_light.png")
                 {
-                    image.src = "green_light.jpg";
+                    image.src = "green_light.png";
                 }
                 else
                 {
-                    image.src = "red_light.jpg";
+                    image.src = "red_light.png";
 				}
             }
