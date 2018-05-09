@@ -7,6 +7,7 @@ var winner = [ document.getElementById("r_tot"), document.getElementById("r_rab"
 //change light color
 function changeColor()
             {	
+		    var image = document.getElementById("imageOne");
 				interval = setInterval( fly, 100 );
                 if (image.getAttribute('src') == "red_light.jpg")
                 {
